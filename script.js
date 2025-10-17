@@ -13,5 +13,5 @@ function initializeGame() {
   });
 }
 
-startButton.addEventListener('click', startGame);
+
 initializeGame();
