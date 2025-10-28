@@ -23,6 +23,13 @@ body {
   overflow: hidden;
 }
 
+/* Focus styles so keyboard users can see which hole is focused */
+.hole:focus,
+.hole:focus-visible {
+  outline: 4px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.08);
+}
+
 .mole {
   background: #8b4513;
   border-radius: 50%;
@@ -51,4 +58,20 @@ button {
 .timer {
   font-size: 24px;
   margin: 10px;
+}
+
+/* On-screen controls/help text */
+.controls {
+  max-width: 560px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-top: 12px;
+  color: #083d3d;
+  font-size: 14px;
+}
+
+.controls p {
+  margin: 0;
 }

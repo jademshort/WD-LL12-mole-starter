@@ -1,29 +1,37 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Whack-a-Mole</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <h1>Whack-a-Mole</h1>
-  <div class="score">Score: <span id="score">0</span></div>
-  <div class="mole-count">Moles: <span id="moleCount">0</span></div>
-  <div class="game">
-    <div class="hole"><span class="hole-number">1</span></div>
-    <div class="hole"><span class="hole-number">2</span></div>
-    <div class="hole"><span class="hole-number">3</span></div>
-    <div class="hole"><span class="hole-number">4</span></div>
-    <div class="hole"><span class="hole-number">5</span></div>
-    <div class="hole"><span class="hole-number">6</span></div>
-    <div class="hole"><span class="hole-number">7</span></div>
-    <div class="hole"><span class="hole-number">8</span></div>
-    <div class="hole"><span class="hole-number">9</span></div>
-  </div>
-  <button id="startButton">Start Game</button>
-  <script src="provided.js"></script>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Whack-a-Mole</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Whack-a-Mole</h1>
+    <div class="score">Score: <span id="score">0</span></div>
+    <div class="timer">Time: <span id="timer">0</span>s</div>
+    <div class="mole-count">Moles: <span id="moleCount">0</span></div>
+    <div class="game">
+      <div class="hole"><span class="hole-number">1</span></div>
+      <div class="hole"><span class="hole-number">2</span></div>
+      <div class="hole"><span class="hole-number">3</span></div>
+      <div class="hole"><span class="hole-number">4</span></div>
+      <div class="hole"><span class="hole-number">5</span></div>
+      <div class="hole"><span class="hole-number">6</span></div>
+      <div class="hole"><span class="hole-number">7</span></div>
+      <div class="hole"><span class="hole-number">8</span></div>
+      <div class="hole"><span class="hole-number">9</span></div>
+    </div>
+    <button id="startButton">Start Game</button>
+    <div class="controls" id="controlsHelp" aria-live="polite">
+      <p>
+        Press <strong>A</strong> to start the game. Use keys
+        <strong>1</strong>–<strong>9</strong> to whack the corresponding hole
+        (left-to-right, top-to-bottom). You can also Tab to a hole and press
+        <strong>Enter</strong> or <strong>Space</strong> to whack.
+      </p>
+    </div>
+    <script src="provided.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
